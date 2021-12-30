@@ -1,210 +1,394 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="Gantavya Malviya :: Founder and CEO at CodeMistic, I am enthisiastic Coders who loves to code in different programming languages link C++,Java, Python ,Kotlin,etc." />
-    <meta name="keywords" content="Gantavya,Gantavya Malviya,Gantu,C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gantavya Malviya</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
-    <link rel="stylesheet" href="assets/css/Animated-Type-Heading.css">
-    <link rel="stylesheet" href="assets/css/Bold-BS4-Jumbotron-with-Particles-js-1.css">
-    <link rel="stylesheet" href="assets/css/Bold-BS4-Jumbotron-with-Particles-js.css">
-    <link rel="stylesheet" href="assets/css/Button-Hover-Animate.css">
-    <link rel="stylesheet" href="assets/css/Card-hover-affect-2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
-    <link rel="stylesheet" href="assets/css/Parallax-Scroll-Effect.css">
-    <link rel="stylesheet" href="assets/css/Responsive-footer-1.css">
-    <link rel="stylesheet" href="assets/css/Responsive-footer.css">
-    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product-1.css">
-    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product.css">
+    <meta name="description" content="A Front End Web Developer and a Competitive Programmer passionate about creating interactive applications on the web and solve complex problem using the power of Data Structures and Algorithms." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-        <div class="container"><a class="navbar-brand logo" href="index.html"><strong>GANTAVYA MALVIYA </strong><br></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
-                    <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="projects-grid-cards.html">Projects</a></li> -->
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="cv.html">CV</a></li>
-                </ul>
-            </div>
-        </div>
+  <!-- Mobile menu button -->
+  <div id="home" class="visuallyHidden"></div>
+  <div class="menuButton" id="menuButton" tabindex=0>
+    <div class="linesContainer">
+      <span></span>
+    </div>
+  </div>
+  <!-- Side menu -->
+  <aside class="sideMenu sideMenuShow" id="sideMenu"> 
+    <p class="logo">GM</p>
+
+    <nav>
+      <ul class="navBar">
+        <li class="homeNav">
+          <a href="#home" class="navItem">
+            <i class="lni lni-home"></i>
+            <span class="navItemName">HOME</span>
+          </a>
+        </li>
+        <li class="aboutNav">
+          <a href="#about" class="navItem">
+            <i class="lni lni-user"></i>
+            <span class="navItemName">ABOUT</span>
+          </a>
+        </li>
+        <li class="skillsNav">
+          <a href="#skills" class="navItem">
+            <i class="lni lni-code-alt"></i>
+            <span class="navItemName">SKILLS</span>
+          </a>
+        </li>
+        <li class="worksNav">
+          <a href="#works" class="navItem">
+            <i class="lni lni-briefcase"></i>
+            <span class="navItemName">WORKS</span>
+          </a>
+        </li>
+        <li class="contactNav">
+          <a href="#contact" class="navItem">
+            <i class="lni lni-phone"></i>
+            <span class="navItemName">CONTACT</span>
+          </a>
+        </li>
+      </ul>
     </nav>
 
-    <main class="page lanidng-page">
-        <div class="jumbotron jumbotron-fluid jumbotron-main">
-            <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-            <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-            <div id="particles-js">
-                <canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas>
-            </div>
-            <div class="container center-vertically-holder" style="margin-top:-20px;">
-                <div class="row center-vertically">
-                    <div class="col-md-8 offset-sm-0 offset-md-2 text-center" style="margin-top:100px;margin-bottom:100px;">
-                        <div class="caption v-middle text-center">
-                            <h3 class="cd-headline clip">
-                                <span class="blc">I'm | </span>
-                                <span class="cd-words-wrapper">
-                                        <b class="is-visible">Gantavya</b>    
-                                        <b>Creative</b>
-                                        <b>Entusiastic</b>
-                                        <b>Developer</b>
-                                        </span>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="scrollDown" id="scrollDown">
+      <i class="lni lni-arrow-down"></i>
+      <span class="navItemName scrollDownText">Scroll Down</span>
+    </div>
+  </aside>
+
+  <!--Beginning of the wrapper -->
+  <div class="outerWrapper"> 
+    <div class="innerWrapper">
+      <!-- Header -->
+      <header>
+        <div class="heroImageContainer">
+          <img src="assets/images/me.jpg" alt="A picture of Gantavya.">
         </div>
-        <section class="portfolio-block block-intro">
-            <p> <br>Hey Folks, <br>This is Gantavya Malviya,<br>Pre-Final Year B.Tech. Undergraduate at LNCT Bhopal.</p>
+        <div class="heroDescription">
+          <p class="greeting">HI THERE! I'M</p>
+          <h1><span>Gantavya</span> Malviya</h1>
+          <p class="smallBio">A <span>Front-End Web Developer</span> and a <span> Competitive Programmer</span> passionate about creating interactive applications on the web and solve complex problems by the power of data structures and algorithms.</p>
+          <div class="socialsResume">
+            <a class="resumeLink" href="resume.pdf" alt="Gantavya's resumé" target="_blank" rel="noopener noreferrer">Resumé</a>
+            <ul class="socialsList">
+              <li>
+                <a href="https://www.linkedin.com/in/gantavyamalviya/" target="_blank" rel="noopener noreferrer"><i class="lni lni-linkedin-original" aria-label="Link to Alex's LinkedIn page."></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/gantavyamalviya" target="_blank" rel="noopener noreferrer"><i class="lni lni-github-original" aria-label="Link to Alex's GitHub page."></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/gantavyamalviya" target="_blank" rel="noopener noreferrer"><i class="lni lni-twitter-original" aria-label="Link to Alex's Twitter profile."></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Beginning of Main -->
+      <main>
+        <!-- About Section -->
+        <section class="aboutSection" id="about">
+          <div class="sectionHead">
+            <span>SOME INFO</span>
+            <h2>ABOUT ME</h2>
+          </div>
+          
+          <article class="aboutContainer sectionContainer">
+            <p>I'm a front-end web developer and a Competitive Programmer active on different coding platforms such as Codeforces, CodeChef and LeetCode. 
+              I Love solving Complex Problems through power of Data Structures and Algorithms. I mostly code in C++. I also love to build website using HTML, CSS and Bootstrap. I am a teach-community entusiast and love to be a part of many communities. I also have community based ed-tech startup named as CodeMistic.
+              Currently, I'm pursuing Bachelor of Technology from <span>Lakshmi Narain College of Technology, Bhopal(India)</span>. I am passionate about coding and solving problems through code, and I am excited to work alongside other amazing programmers and learn so much more!</p>
+          </article>
+        </section>
 
-            <div class="avatar" style="background-image: url(&quot;assets/img/my-min.jpg&quot;);"></div>
-                 <div class="col-lg-12 offset-lg-0 text-center"><a class="btn btn-primary link" role="button" href="cv.html" id="link">View CV/Resume</a></div>
-<!--             <div class="col-lg-12 offset-lg-0 text-center"><a class="btn btn-primary link" role="button" href="https://onedrive.live.com/?authkey=%21AN9KPbdOgX3bNYQ&cid=7EBD76547AD52998&id=7EBD76547AD52998%21646&parId=7EBD76547AD52998%21105&o=OneUp" id="link">Download Resume/CV</a></div>
- -->
+        <!-- Skills Section -->
+        <section class="skillsSection" id="skills">
+          <div class="sectionHead">
+            <span>CHECK OUT MY</span>
+            <h2>SKILLS</h2>
+          </div>
+        
+          <div class="skillsContainer sectionContainer">
+            <ul class="skillsGrid">
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/c++.svg">
+                  <p>C++</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/java.svg">
+                  <p>JAVA</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/html.svg">
+                  <p>HTML</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/css.svg">
+                  <p>CSS</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/bootstrap.svg">
+                  <p>Bootstrap</p>
+                </div>
+              </li>
+              <!-- <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/sass.svg">
+                  <p>SASS</p>
+                </div>
+              </li> -->
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/javascript.svg">
+                  <p>Javascript</p>
+                </div>
+              </li>
+              <!-- <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/jquery.svg">
+                  <p>JQuery</p>
+                </div>
+              </li> 
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/react.svg">
+                  <p>React</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/api.svg" alt="Image from https://commons.wikimedia.org/wiki/File:Cloud-API-Logo.svg">
+                  <p>REST API</p>
+                </div>
+              </li> -->
+              <li> 
+                <div class="itemContainer">
+                  <img src="assets/skills/github.svg">
+                  <p>GitHub</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/vscode.svg">
+                  <p>VS Code</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/microsoftWindows.svg">
+                  <p>Windows</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/mysql.svg">
+                  <p>MySQL</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/figma.svg">
+                  <p>Figma</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
 
+        <!-- Works Section -->
+        <section class="worksSection" id="works">
+          <div class="sectionHead">
+            <span>TAKE A LOOK AT MY</span>
+            <h2>WORK EXPERIENCE AND PROJECTS</h2>
+          </div>
+
+          <div class="worksContainer sectionContainer">
+            <!--
+            <article class="workBox">
+              <div class="workImageContainer">
+                <img src="assets/images/stonks.PNG" alt="Stonk.">
+              </div>
+              <div class="workDescribeContainer">
+                <h3>Stonk Market</h3>
+                <h4>Technologies Used: <span class="techStack">React</span>, <span class="techStack">REST API</span>, <span class="techStack">ChartJS</span></h4>
+                <ul>
+                  <li>Completely built with hooks and functional components</li>
+                  <li>Emulates time passage, and stock prices update randomly as each "day" passes</li>
+                  <li>Real-time updates on stock and portfolio performance, visualized with interactive charts</li>
+                </ul>
+                <div class="workLinks">
+                  <a href="https://alexcalia.com/stonks" class="liveLink" target="_blank" rel="noopener noreferrer">Live</a>
+                  <a href="https://github.com/alexcalia/stonks" class="repoLink" target="_blank" rel="noopener noreferrer">Repo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="workBox">
+              <div class="workImageContainer">
+                <img src="assets/images/podcastprioritizer.PNG" alt="Podcast Prioritizer landing page.">
+              </div>
+              <div class="workDescribeContainer">
+                <h3>Podcast Prioritizer</h3>
+                <h4>Technologies Used: <span class="techStack">React</span>, <span class="techStack">REST API</span>, <span class="techStack">Firebase</span>, <span class="techStack">Google Authentication</span></h4>
+                <ul>
+                  <li>Uses the MapQuest and ListenNotes API to get route times and filter podcast search results based on travel time</li>
+                  <li>Google Authenitcation service allows users to sign in and save podcasts to a list, stored in Firebase</li>
+                </ul>
+                <div class="workLinks">
+                  <a href="https://alexcalia.com/podcastprioritizer" class="liveLink" target="_blank" rel="noopener noreferrer">Live</a>
+                  <a href="https://github.com/alexcalia/podcastprioritizer" class="repoLink" target="_blank" rel="noopener noreferrer">Repo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="workBox">
+              <div class="workImageContainer">
+                <img src="assets/images/cohort.PNG" alt="COHORT app's Collaborate page.">
+              </div>
+              <div class="workDescribeContainer">
+                <h3>COHORT</h3>
+                <h4>Technologies Used: <span class="techStack">React</span>, <span class="techStack">React Router</span>, <span class="techStack">Firebase</span>, <span class="techStack">REST API</span></h4>
+                <ul>
+                  <li>React Router was used to create multiple views for the chat and quotes systems</li>
+                  <li>Real-time chat where users can change their username, with all messages stored in Firebase</li>
+                  <li>Pulls a random quote from an API where users can write an anonymous reflection for others to see, all stored in Firebase</li>
+                </ul>
+                <div class="workLinks">
+                  <a href="https://alexcalia.com/cohort" class="liveLink" target="_blank">Live</a>
+                  <a href="https://github.com/alexcalia/cohortApp" class="repoLink" target="_blank" rel="noopener noreferrer">Repo</a>
+                  <a href="https://www.loom.com/share/f615f75be23b40639d3cf74b163c71bc" class="demoLink" target="_blank" rel="noopener noreferrer">Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="workBox">
+              <div class="workImageContainer">
+                <img src="assets/images/gamescope.PNG" alt="Game Scope landing page.">
+              </div>
+              <div class="workDescribeContainer">
+                <h3>Game Scope</h3>
+                <h4>Technologies Used: <span class="techStack">JQuery</span>, <span class="techStack">REST API</span>, <span class="techStack">SASS</span></h4>
+                <ul>
+                  <li>Information on games pulled from a video game API</li>
+                  <li>Games can be filtered by genre using a drop down menu, where the endpoint is updated dynamically</li>
+                  <li>Using pagination, more games from the genres can be pulled as users request them</li>
+                </ul>
+                <div class="workLinks">
+                  <a href="https://alexcalia.com/gamescope" class="liveLink" target="_blank" rel="noopener noreferrer">Live</a>
+                  <a href="https://github.com/alexcalia/gamescope" class="repoLink" target="_blank" rel="noopener noreferrer">Repo</a>
+                </div>
+              </div>
+            </article> 
+
+            <article class="workBox">
+              <div class="workImageContainer">
+                <img src="assets/images/slangapp.PNG" alt="Twitter Slang Generator page with results diplsayed.">
+              </div>
+              <div class="workDescribeContainer">
+                <h3>Twitter Slang Generator</h3>
+                <h4>Technologies Used: <span class="techStack">JQuery</span>, <span class="techStack">SASS</span></h4>
+                <ul>
+                  <li>Users click an abbreviation and are given a randomly generated definition</li>
+                  <li>Words are randomly chosen from a large object containing arrays of words for each letter</li>
+                  <li>Toggle between light and dark themes</li>
+                  <li>Secret mode can be unlocked where users can enter their own abbreviations</li>
+                </ul>
+                <div class="workLinks">
+                  <a href="https://alexcalia.com/slangapp" class="liveLink" target="_blank" rel="noopener noreferrer">Live</a>
+                  <a href="https://github.com/alexcalia/slangapp" class="repoLink" target="_blank" rel="noopener noreferrer">Repo</a>
+                </div>
+              </div>
+            </article> -->
+
+            <article class="workBox">
+              <div class="workImageContainer">
+                <img src="assets/images/lcg.png" alt="LCG">
+              </div>
+              <div class="workDescribeContainer">
+                <h3>LNCT Coders Group</h3>
+                <h4>Technologies Used: <span class="techStack">HTML</span>, <span class="techStack">CSS</span>, <span class="techStack">Bootstrap</span></h4>
+                <ul>
+                  <li>Developed a responsible website to post information related to coding events in LNCT.</li>
+                  <li>Integrated Form section with Formspree API</li>
+                </ul>
+                <div class="workLinks">
+                  <a href="https://lnctcodersgroup.github.io/" class="liveLink" target="_blank" rel="noopener noreferrer">Live</a>
+                  <a href="https://github.com/lnctcodersgroup" class="repoLink" target="_blank" rel="noopener noreferrer">Repo</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contactSection" id="contact">
+          <div class="sectionHead">
+            <span>SAY HELLO</span>
+            <h2>CONTACT</h2>
+          </div>
+
+          <div class="contactContainer sectionContainer">
+            <h3>Get in Touch</h3>
+            <div class="contactTypes">
+              <div class="flexContainer">
+                <div class="typeBox">
+                  <i class="lni lni-envelope"></i>
+                  <a href="mailto:thegantavyamalviya@gmail.com">thegantavyamalviya@gmail.com</a>
+                  <a href="mailto:thegantavyamalviya@gmail.com"><p>Email Me</p></a>
+                </div>
+              </div>
+              <div class="flexContainer">
+                <div class="typeBox">
+                  <i class="lni lni-calendar"></i>
+                  <a href="https://calendly.com/gantavyamalviya/30min" target="_blank" rel="noopener noreferrer">Calendly</a>
+                  <a href="https://calendly.com/gantavyamalviya/30min" target="_blank" rel="noopener noreferrer"><p>Schedule a Meeting</p></a>
+                </div>
+              </div>
+            </div>
+            <div class="contactFormContainer">
+              <h3>Contact Form</h3>
+
+              <form id="contactForm" action="https://formspree.io/f/mjvlkwny" method="POST">
+                  <label for="nameInput" class="srOnly"></label>
+                  <input type="text" id="nameInput" name="nameInput" class="nameInput" required placeholder="Your Name*"/>
+                  <label for="emailInput" class="srOnly"></label>
+                  <input type="email" id="emailInput" name="emailInput" class="emailInput" required placeholder="Your Email*" />
+                  <label for="subjectInput" class="srOnly"></label>
+                  <input type="text" id="subjectInput" name="subjectInput" class="subjectInput" required placeholder="Subject*"/>
+                  <label for="messageInput" class="srOnly"></label>
+                  <textarea class="messageInput" name="messageInput" id="messageInput" required placeholder="Your Message*"></textarea>
+              </form>
+
+              <button type="submit" class="formSend" target="_blank" form="contactForm" rel="noopener noreferrer">SEND</button>
+            </div>
+          </div> 
 
         </section>
-        <section class="portfolio-block photography">
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="col">
-                        <div class="blog-slider">
-                            <div class="blog-slider__wrp swiper-wrapper">
-                                <div class="blog-slider__item swiper-slide">
-                                    <div></div>
-                                    <div class="blog-slider__img"><img src="assets/img/blog-1.jpg"></div>
-                                    <div class="blog-slider__content">
-                                        <div class="blog-slider__title">DEVELOPER</div>
-                                        <div class="blog-slider__text">All about the passion , interest and love for solving the global problems through the power of code </div>
-                                    </div>
-                                </div>
-                                <div class="blog-slider__item swiper-slide">
-                                    <div></div>
-                                    <div class="blog-slider__img"><img src="assets/img/blog-2.jpg"></div>
-                                    <div class="blog-slider__content">
-                                        <div class="blog-slider__title">COMMUNITY MEMBER</div>
-                                        <div class="blog-slider__text">Lead at College's Coding Club . Active Member of GDG, DevC and other Open Communities . </div>
-                                    </div>
-                                </div>
-                                <div class="blog-slider__item swiper-slide">
-                                    <div></div>
-                                    <div class="blog-slider__img"><img src="assets/img/blog-3.jpg"></div>
-                                    <div class="blog-slider__content">
-                                        <div class="blog-slider__title">PASSIONATE ABOUT CREATING.</div>
-                                        <div class="blog-slider__text">Its all about code - Build - Deploy . Because starting something small eventually leads to something big. Its all about changing lives through code. </div>
-                                    </div>
-                                </div>
-                                <div class="blog-slider__pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <section class="portfolio-block call-to-action border-bottom">
-            <div class="container-fluid text-center">
-                <div class="d-flex justify-content-center align-items-center content">
-                    <h2 class="display-3 text-justify align-items-center">Thats Me!</h2>
-                </div>
-            </div>
-            <footer class="page-footer">
-                <p class="text-center" style="margin-top:30px;margin-bottom:15px;">
-                    <a href="https://www.instagram.com/gantavyamalviya/" style="font-size:35px;"><i class="fa fa-instagram"
-                    style="color:rgb(0,0,0);margin-right:0px;"></i></a>
-                    <a href="https://twitter.com/gantavyamalviya" style="font-size:35px;"><i
-                    class="icon ion-social-twitter" style="color:rgb(0,0,0);"></i></a>
-                    <a href="https://www.linkedin.com/in/gantavyamalviya" style="font-size:35px;"><i
-                    class="icon ion-social-linkedin" style="color:rgb(0,0,0);"></i></a>
-                    <a href="https://github.com/gantavyamalviya" style="font-size:35px;"><i class="fa fa-github" style="color:rgb(0,0,0);"></i></a>
-                    <!--<a href="https://www.youtube.com/" style="font-size:35px;"><i
-                    class="fa fa-youtube" style="color:rgb(0,0,0);margin-right:0px;"></i></a>
-            
-        </p>
-
-        </section> -->
-
-        <section class="portfolio-block skills">
-            <div class="container">
-                <div class="heading">
-                    <h2>Technical Skills</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-android-desktop"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Web Development</h3>
-                                <p class="card-text">I like to make resposive websites using Bootstrap and JavaScript&nbsp;</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-code"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Competitive Programming&nbsp;</h3>
-                                <p class="card-text">I Love solving Complex Problems through power of DS and algorithms.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-code"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">IOT Enthusiast</h3>
-                                <p class="card-text">Deployoing IOT based solutions to make things easy.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="page-footer">
-        <p class="text-center" style="margin-top:30px;margin-bottom:15px;">
-        <strong><h4>Connect with Me :</h4></strong>
-            <a href="mailto:thegantavyamalviya@gmail.com" target="_blank" style="font-size:35px;"><i class="fa fa-envelope " style="color:#8cbcff;"></i></a>
-            <a href="https://www.instagram.com/gantavyamalviya" target="_blank" style="font-size:35px;"><i class="fa fa-instagram" style="color:#e95950;"></i></a>
-            <a href="https://t.me/gantavyamalviya" target="_blank" style="font-size:35px;"><i class="fa fa-telegram" style="color:#65adda;"></i></a>
-
-            <a href="https://medium.com/@gantavyamalviya" target="_blank" style="font-size:35px;"><i class="fa fa-medium" style="color:#88b3ee;"></i></a>
-            <a href="https://www.linkedin.com/in/gantavyamalviya" target="_blank" style="font-size:35px;"><i class="fa fa-linkedin" style="color:#88b3ee;"></i></a>
-            <a href="https://www.facebook.com/gantavyamalviya" target="_blank" style="font-size:35px;"><i class="fa fa-facebook" style="color:#3b5998;"></i></a>
-            <!-- <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag" target="_blank" style="font-size:35px;"><i class="fa fa-youtube" style="color:red;"></i></a> 
-            <a href="https://www.twitter.com/gantavyamalviya" target="_blank" style="font-size:35px;"><i class="fa fa-twitter" style="color:#8accf5;"></i></a> -->
-            <a href="https://github.com/gantavyamalviya" target="_blank" style="font-size:35px;"><i class="fa fa-github" style="color:rgb(0,0,0);"></i></a>
-            <!--<a href="https://www.youtube.com/" style="font-size:35px;"><i
-                    class="fa fa-youtube" style="color:rgb(0,0,0);margin-right:0px;"></i></a>
-            -->
-        </p>
+      </main> <!-- End of Main -->
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Gantavya Malviya </p>
     </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/Animated-Type-Heading.js"></script>
-    <script src="assets/js/Bold-BS4-Jumbotron-with-Particles-js.js"></script>
-    <script src="assets/js/bs-animation.js"></script>
-    <script src="assets/js/Card-hover-affect-2.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="assets/js/Swiper-Slider-Card-For-Blog-Or-Product.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <!-- Icons provided by https://lineicons.com/ -->
+  </div> <!-- End of the wrapper -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="scripts/index.js"></script>
 </body>
-
 </html>

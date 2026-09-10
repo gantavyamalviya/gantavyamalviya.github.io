@@ -69,8 +69,8 @@
             <span class="hero__role-type" id="roleType" aria-live="polite"></span>
           </p>
           <p class="hero__bio">
-            I build scalable distributed systems and ship great software.
-            Currently working at <strong>Amazon Web Services</strong> in Munich. 🚀
+            3+ years building large-scale distributed systems at <strong>Amazon Web Services</strong>, Munich —
+            designing fault-tolerant microservices that serve millions of enterprise customers globally. 🚀
           </p>
           <div class="hero__actions">
             <a href="#works"  class="btn btn--primary">View My Work</a>
@@ -132,20 +132,20 @@
           </div>
           <div class="about__stats">
             <div class="stat-card reveal">
-              <span class="stat-card__number">AWS</span>
-              <span class="stat-card__label">Current Employer</span>
+              <span class="stat-card__number">3+</span>
+              <span class="stat-card__label">Years at AWS</span>
             </div>
             <div class="stat-card reveal">
-              <span class="stat-card__number">10+</span>
-              <span class="stat-card__label">Projects Built</span>
+              <span class="stat-card__number">1980+</span>
+              <span class="stat-card__label">LeetCode Rating · Top 3%</span>
             </div>
             <div class="stat-card reveal">
-              <span class="stat-card__number">500+</span>
-              <span class="stat-card__label">LeetCode Problems</span>
+              <span class="stat-card__number">650+</span>
+              <span class="stat-card__label">Problems Solved</span>
             </div>
             <div class="stat-card reveal">
-              <span class="stat-card__number">∞</span>
-              <span class="stat-card__label">Bad Jokes Cracked</span>
+              <span class="stat-card__number">7K+</span>
+              <span class="stat-card__label">Developers Reached</span>
             </div>
           </div>
         </div>
@@ -163,11 +163,11 @@
           <div class="skill-category reveal">
             <h3 class="skill-category__title">Languages</h3>
             <div class="skill-category__tags">
-              <span class="tag">C++</span>
               <span class="tag">Java</span>
+              <span class="tag">Kotlin</span>
               <span class="tag">TypeScript</span>
               <span class="tag">JavaScript</span>
-              <span class="tag">Kotlin</span>
+              <span class="tag">C++</span>
               <span class="tag">Python</span>
             </div>
           </div>
@@ -175,28 +175,57 @@
             <h3 class="skill-category__title">Cloud &amp; Infrastructure</h3>
             <div class="skill-category__tags">
               <span class="tag tag--featured">AWS</span>
+              <span class="tag">EC2</span>
               <span class="tag">Lambda</span>
-              <span class="tag">DynamoDB</span>
+              <span class="tag">ECS / EKS</span>
               <span class="tag">S3</span>
-              <span class="tag">Firebase</span>
+              <span class="tag">DynamoDB</span>
+              <span class="tag">SQS / SNS</span>
+              <span class="tag">EventBridge</span>
+              <span class="tag">API Gateway</span>
+              <span class="tag">CloudWatch</span>
+              <span class="tag">IAM</span>
+              <span class="tag">Route 53</span>
+              <span class="tag">Amazon Bedrock</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">AWS CDK</span>
+            </div>
+          </div>
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Backend &amp; Frameworks</h3>
+            <div class="skill-category__tags">
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Spring Security</span>
+              <span class="tag">Hibernate / JPA</span>
+              <span class="tag">JWT</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">Microservices</span>
+              <span class="tag">Distributed Systems</span>
+              <span class="tag">Serverless</span>
             </div>
           </div>
           <div class="skill-category reveal">
             <h3 class="skill-category__title">Frontend</h3>
             <div class="skill-category__tags">
+              <span class="tag">React</span>
+              <span class="tag">Redux Toolkit</span>
               <span class="tag">HTML5</span>
               <span class="tag">CSS3 / SASS</span>
-              <span class="tag">Bootstrap</span>
               <span class="tag">Figma</span>
             </div>
           </div>
           <div class="skill-category reveal">
-            <h3 class="skill-category__title">Tools &amp; Platforms</h3>
+            <h3 class="skill-category__title">Testing &amp; DevOps</h3>
             <div class="skill-category__tags">
+              <span class="tag">JUnit</span>
+              <span class="tag">Kotest</span>
+              <span class="tag">Testcontainers</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">CI/CD</span>
               <span class="tag">Git / GitHub</span>
-              <span class="tag">VS Code</span>
               <span class="tag">MySQL</span>
-              <span class="tag">Competitive Programming</span>
             </div>
           </div>
         </div>
@@ -211,6 +240,8 @@
           <h2 class="section__title">Where I've worked</h2>
         </div>
         <div class="timeline">
+
+          <!-- AWS SDE -->
           <div class="timeline__item reveal">
             <div class="timeline__dot" aria-hidden="true"></div>
             <div class="timeline__card">
@@ -219,17 +250,75 @@
                   <h3 class="timeline__role">Software Development Engineer</h3>
                   <p class="timeline__company">Amazon Web Services (AWS) · Munich, Germany</p>
                 </div>
-                <span class="timeline__badge">Current</span>
+                <div class="timeline__meta">
+                  <span class="timeline__badge">Current</span>
+                  <span class="timeline__period">Aug 2023 – Present</span>
+                </div>
               </div>
-              <p class="timeline__desc">Building and scaling high-throughput distributed systems and cloud infrastructure at AWS. Working on services that power millions of customers globally with strong reliability and low latency requirements.</p>
+              <ul class="timeline__bullets">
+                <li>Engineered <strong>Amazon Connect Cases</strong> end-to-end — backend microservices (Java) and React console UI — powering enterprise contact centers that handle millions of customer interactions globally at <strong>99.9%+ availability</strong>.</li>
+                <li>Built an intelligent multi-agent AI system with <strong>Amazon Bedrock</strong>, AWS Cedar, and MCP integrating 7 specialized agents; automated complex workflows and eliminated <strong>70% of manual processes</strong>.</li>
+                <li>Reduced incident detection time by <strong>50%</strong> and MTTR by <strong>40%</strong> by designing proactive CloudWatch alerting dashboards and runbooks adopted across the team.</li>
+                <li>Drove reliability improvements across distributed services on DynamoDB, SQS, SNS, and EventBridge under high-throughput production load.</li>
+              </ul>
               <div class="timeline__tags">
                 <span class="tag tag--sm">Java</span>
+                <span class="tag tag--sm">Kotlin</span>
                 <span class="tag tag--sm">TypeScript</span>
-                <span class="tag tag--sm">AWS</span>
-                <span class="tag tag--sm">Distributed Systems</span>
+                <span class="tag tag--sm">React</span>
+                <span class="tag tag--sm">Amazon Bedrock</span>
+                <span class="tag tag--sm">DynamoDB</span>
+                <span class="tag tag--sm">AWS CDK</span>
               </div>
             </div>
           </div>
+
+          <!-- GDSC Lead -->
+          <div class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Competitive Programming Lead</h3>
+                  <p class="timeline__company">Google Developer Student Club (GDSC) · LNCT</p>
+                </div>
+                <span class="timeline__period">Aug 2021 – May 2022</span>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Led the Competitive Programming vertical for <strong>3,000+ students</strong> across the GDSC chapter.</li>
+                <li>Organised workshops, contests, and mentoring sessions to build algorithmic thinking and DSA skills across skill levels.</li>
+              </ul>
+              <div class="timeline__tags">
+                <span class="tag tag--sm">Leadership</span>
+                <span class="tag tag--sm">Competitive Programming</span>
+                <span class="tag tag--sm">Community Building</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- LNCT Coders Group Lead -->
+          <div class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Community Lead</h3>
+                  <p class="timeline__company">LNCT Coders Group · Bhopal, India</p>
+                </div>
+                <span class="timeline__period">Jan 2020 – Apr 2022</span>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Founded and led the developer community that grew to <strong>7,000+ developers</strong>.</li>
+                <li>Spearheaded open-source projects, hackathons, and collaborative coding initiatives that helped hundreds of students land their first tech roles.</li>
+              </ul>
+              <div class="timeline__tags">
+                <span class="tag tag--sm">Leadership</span>
+                <span class="tag tag--sm">Open Source</span>
+                <span class="tag tag--sm">Community Building</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -296,6 +385,37 @@
               <div class="project-card__links">
                 <a href="https://codemistic.github.io/" class="btn btn--sm btn--primary" target="_blank" rel="noopener noreferrer">Live Site ↗</a>
                 <a href="https://github.com/codemistic" class="btn btn--sm btn--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__img project-card__img--placeholder" aria-hidden="true">
+              <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" width="600" height="340">
+                <rect width="600" height="340" fill="url(#pp-grad)"/>
+                <defs>
+                  <linearGradient id="pp-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#1e1b4b"/>
+                    <stop offset="100%" stop-color="#312e81"/>
+                  </linearGradient>
+                </defs>
+                <text x="50%" y="44%" dominant-baseline="middle" text-anchor="middle" font-size="72" fill="#818cf8" font-family="system-ui,sans-serif" font-weight="700" opacity=".9">🏓</text>
+                <text x="50%" y="66%" dominant-baseline="middle" text-anchor="middle" font-size="28" fill="#c7d2fe" font-family="system-ui,sans-serif" font-weight="600" letter-spacing="2">PingPong</text>
+              </svg>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">PingPong</h3>
+              <p class="project-card__desc">Full-stack social media platform with blogging, likes, comments, and follows. Secured with Spring Security + JWT, containerised with Docker, and comprehensively tested with JUnit &amp; Testcontainers.</p>
+              <div class="project-card__tags">
+                <span class="tag tag--sm">Java</span>
+                <span class="tag tag--sm">Spring Boot</span>
+                <span class="tag tag--sm">React</span>
+                <span class="tag tag--sm">Redux Toolkit</span>
+                <span class="tag tag--sm">Docker</span>
+                <span class="tag tag--sm">JWT</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/gantavyamalviya/pingpong" class="btn btn--sm btn--primary" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
               </div>
             </div>
           </article>

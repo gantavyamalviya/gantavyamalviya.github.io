@@ -876,6 +876,45 @@ ul, ol { list-style: none; }
   margin-bottom: var(--sp-5);
 }
 .timeline__tags { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.timeline__bullets {
+  list-style: none;
+  margin: 0 0 var(--sp-5);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+.timeline__bullets li {
+  position: relative;
+  padding-left: var(--sp-5);
+  font-size: var(--text-md);
+  color: var(--clr-text-muted);
+  line-height: 1.8;
+}
+.timeline__bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: .65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--grad-primary);
+}
+.timeline__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--sp-2);
+  flex-shrink: 0;
+}
+.timeline__period {
+  font-size: var(--text-xs);
+  color: var(--clr-text-muted);
+  white-space: nowrap;
+  font-weight: 500;
+  letter-spacing: .02em;
+}
 
 /* ── 13. WORKS ─────────────────────────────────────────── */
 .works__grid {

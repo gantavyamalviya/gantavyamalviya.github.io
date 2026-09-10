@@ -736,22 +736,6 @@ ul, ol { list-style: none; }
   border: 1px solid rgba(132,68,223,.25);
 }
 
-/* Banner — replaces project image for cards without a screenshot */
-.project-card__banner {
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--sp-3);
-  font-size: var(--text-sm);
-  font-weight: 600;
-  letter-spacing: .04em;
-}
-.project-card__banner--aws {
-  background: linear-gradient(135deg, #232f3e 0%, #1a242f 100%);
-  color: #FF9900;
-}
 
 /* ── 12. CONTACT ───────────────────────────────────────── */
 .contact { background: var(--clr-bg); }

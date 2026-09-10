@@ -5,6 +5,32 @@
 
 'use strict';
 
+/* ── Theme toggle ───────────────────────────────────────── */
+(function() {
+  const root   = document.documentElement;
+  const btn    = document.getElementById('themeToggle');
+  if (!btn) return;
+
+  function getTheme() {
+    return root.getAttribute('data-theme') || 'light';
+  }
+
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    btn.setAttribute('aria-label',
+      theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+    );
+  }
+
+  // Sync button label with the theme already set by the anti-flash script
+  applyTheme(getTheme());
+
+  btn.addEventListener('click', () => {
+    applyTheme(getTheme() === 'dark' ? 'light' : 'dark');
+  });
+})();
+
 /* ── Nav scroll effect ──────────────────────────────────── */
 const nav       = document.getElementById('nav');
 const hamburger = document.getElementById('hamburger');

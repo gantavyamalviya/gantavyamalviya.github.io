@@ -36,8 +36,8 @@
   --nav-bg-mobile:   rgba(255,255,255,.97);
 
   /* Typography */
-  --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
-  --font-body:    'Inter',         system-ui, -apple-system, sans-serif;
+  --font-display: 'Poppins', system-ui, -apple-system, sans-serif;
+  --font-body:    'Poppins', system-ui, -apple-system, sans-serif;
 
   /* Type scale */
   --text-xs:  0.75rem;
@@ -450,8 +450,8 @@ ul, ol { list-style: none; }
   font-family: var(--font-display);
   font-size: clamp(3rem, 8vw, var(--text-7xl));
   font-weight: 700;
-  line-height: 1.0;
-  letter-spacing: -.035em;
+  line-height: 1.05;
+  letter-spacing: -.02em;
   /* Gradient text */
   background: var(--grad-text);
   -webkit-background-clip: text;
@@ -621,8 +621,8 @@ ul, ol { list-style: none; }
   font-family: var(--font-display);
   font-size: clamp(var(--text-3xl), 4vw, var(--text-4xl));
   font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -.025em;
+  line-height: 1.2;
+  letter-spacing: -.015em;
   color: var(--clr-text);
 }
 
@@ -855,7 +855,7 @@ ul, ol { list-style: none; }
   font-weight: 700;
   color: var(--clr-text);
   margin-bottom: var(--sp-1);
-  letter-spacing: -.02em;
+  letter-spacing: -.01em;
 }
 .timeline__company { font-size: var(--text-sm); color: var(--clr-text-muted); }
 .timeline__badge {
@@ -936,10 +936,10 @@ ul, ol { list-style: none; }
 .project-card__title {
   font-family: var(--font-display);
   font-size: var(--text-xl);
-  font-weight: 700;
+  font-weight: 600;
   color: var(--clr-text);
-  letter-spacing: -.02em;
-  line-height: 1.25;
+  letter-spacing: -.01em;
+  line-height: 1.3;
 }
 .project-card__desc {
   font-size: var(--text-sm);

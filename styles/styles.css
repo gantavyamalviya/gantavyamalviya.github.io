@@ -656,7 +656,7 @@ ul, ol { list-style: none; }
 
 .works__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--sp-6);
 }
 .project-card {
@@ -734,6 +734,23 @@ ul, ol { list-style: none; }
   padding: var(--sp-1) var(--sp-3);
   border-radius: var(--r-full);
   border: 1px solid rgba(132,68,223,.25);
+}
+
+/* Banner — replaces project image for cards without a screenshot */
+.project-card__banner {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+.project-card__banner--aws {
+  background: linear-gradient(135deg, #232f3e 0%, #1a242f 100%);
+  color: #FF9900;
 }
 
 /* ── 12. CONTACT ───────────────────────────────────────── */
@@ -874,8 +891,9 @@ ul, ol { list-style: none; }
 .skills__grid .skill-category:nth-child(4) { transition-delay: 240ms; }
 
 .works__grid .project-card:nth-child(1) { transition-delay:   0ms; }
-.works__grid .project-card:nth-child(2) { transition-delay: 100ms; }
-.works__grid .project-card:nth-child(3) { transition-delay: 200ms; }
+.works__grid .project-card:nth-child(2) { transition-delay:  80ms; }
+.works__grid .project-card:nth-child(3) { transition-delay: 160ms; }
+.works__grid .project-card:nth-child(4) { transition-delay: 240ms; }
 
 .contact__list .contact-card:nth-child(1) { transition-delay:   0ms; }
 .contact__list .contact-card:nth-child(2) { transition-delay:  80ms; }
@@ -904,7 +922,7 @@ ul, ol { list-style: none; }
   .about__grid { grid-template-columns: 1fr; }
   .about__stats { grid-template-columns: repeat(4, 1fr); }
 
-  .works__grid { grid-template-columns: repeat(2, 1fr); }
+  .works__grid { grid-template-columns: 1fr; }
 }
 
 /* Mobile */

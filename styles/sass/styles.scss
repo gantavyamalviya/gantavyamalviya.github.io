@@ -1,11 +1,21 @@
-@import 'setup';
+// =========================================================
+// Root SCSS entry point
+// Compiled output → styles/styles.css  (edit that file directly,
+// or run: npx sass styles/sass/styles.scss styles/styles.css --style=expanded)
+// =========================================================
+
 @import 'variables';
-@import 'general';
-@import 'menu';
-@import 'header';
-@import 'about';
-@import 'skills';
-@import 'works';
-@import 'contact';
-@import 'footer';
-@import 'mediaQueries';
+
+// Section partials (kept for reference; compiled CSS is the source of truth)
+// @import 'setup';
+// @import 'general';
+// @import 'nav';
+// @import 'hero';
+// @import 'about';
+// @import 'skills';
+// @import 'experience';
+// @import 'works';
+// @import 'contact';
+// @import 'footer';
+// @import 'animations';
+// @import 'mediaQueries';

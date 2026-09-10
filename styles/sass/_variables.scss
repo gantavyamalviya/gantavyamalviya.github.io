@@ -1,15 +1,67 @@
-$mainColor: #8444df;
-$darkWhite: #f7f7f7;
-$offWhite: #eee;
-$lightBlack: #333;
+// =========================================================
+// Design Tokens — mirrors CSS custom properties in styles.css
+// =========================================================
 
-$transitionEase: all 0.3s ease-in;
-$plainFocus: 2px solid $mainColor;
+// Brand
+$clr-primary:        #8444df;
+$clr-primary-dark:   #6b33c0;
+$clr-primary-light:  #a26ef0;
+$clr-primary-subtle: #f3eeff;
 
-$smallBorder: 1px solid $offWhite;
+// Surface
+$clr-bg:        #ffffff;
+$clr-bg-alt:    #f8f7ff;
+$clr-bg-dark:   #0d0d18;
 
-@mixin focusBorder {
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+// Text
+$clr-text:       #1a1a2e;
+$clr-text-muted: #64748b;
+$clr-text-inv:   #ffffff;
+
+// Borders
+$clr-border:     #e2e8f0;
+$clr-border-mid: #cbd5e1;
+
+// Typography
+$font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+$font-body:    'Inter',         system-ui, -apple-system, sans-serif;
+
+// Spacing
+$sp-4:  1rem;
+$sp-6:  1.5rem;
+$sp-8:  2rem;
+$sp-12: 3rem;
+$sp-16: 4rem;
+$sp-24: 6rem;
+
+// Layout
+$max-w: 1200px;
+$nav-h: 72px;
+
+// Radii
+$r-sm:   6px;
+$r-md:   12px;
+$r-lg:   20px;
+$r-xl:   28px;
+$r-full: 9999px;
+
+// Transitions
+$ease-fast: 150ms ease;
+$ease-base: 250ms ease;
+$ease-slow: 400ms ease;
+
+// Mixins
+@mixin focus-ring {
+  &:focus-visible {
+    outline: 3px solid $clr-primary;
+    outline-offset: 3px;
+  }
+}
+
+@mixin card-hover {
+  transition: all $ease-base;
+  &:hover {
+    border-color: $clr-primary;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1);
+  }
 }

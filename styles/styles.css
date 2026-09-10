@@ -960,6 +960,21 @@ ul, ol { list-style: none; }
   transition: transform var(--ease-slow);
 }
 .project-card:hover .project-card__img img { transform: scale(1.07); }
+/* Logo variant — square image centred on a gradient bg */
+.project-card__img--logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+}
+.project-card__img--logo img {
+  width: auto;
+  height: 140px;
+  object-fit: contain;
+  border-radius: var(--r-lg);
+  filter: drop-shadow(0 4px 24px rgba(99,102,241,.45));
+}
+.project-card:hover .project-card__img--logo img { transform: scale(1.08); }
 
 .project-card__body {
   padding: var(--sp-6);
